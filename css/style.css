@@ -1,6 +1,7 @@
 @import'fonts.css';
 
 body {
+	font-family: 'Open Sans';
 	background: gray;
 }
 ul, li {
@@ -9,13 +10,24 @@ ul, li {
 	padding: 0;
 }
 
+/*Menu-bar*/
 .menu-bar {
 	background: white;
 	color: #212121;
 	padding: 20px 0;
 }
+.logo {
+	font-size: 30px;
+	font-weight: bold;
+	color: #00897b;
+}
+.logo:hover {
+	text-decoration: none;
+	color: #00897b;
+}
 .menu__item {
 	margin-left: 37px;
+	cursor: pointer;
 }
 .menu__item a {
 	font-family: 'Open Sans Semibold';
@@ -24,5 +36,75 @@ ul, li {
 }
 .menu__item a:hover {
 	text-decoration: none;
-	color: #868686;
+	color: #00897b;
+}
+.fa-search {
+	vertical-align: bottom;
+}
+
+/*Header*/
+.header {
+	background-image: url(../img/header.png);
+	background-size: cover;
+	background-position: 0 100%;
+}
+.header > div {
+	padding: 180px 0;
+	text-align: center;
+	color: white;
+}
+.header__title {
+	font-size: 55px;
+	margin-bottom: 20px;
+}
+.header__text {
+	font-size: 20px;
+	margin-bottom: 105px;
+}
+.button {
+	padding: 15px 35px;
+	margin: 0 10px;
+	color: white;
+	transition: 0.3s;
+	text-transform: uppercase;
+}
+.button_transparent {
+	background: transparent;
+	border: 2px solid white;
+}
+.button_transparent:hover {
+	border: 2px dotted white;
+}
+.button_colored {
+	background: #00897b;
+	border: 2px solid #00897b;
+}
+.button_colored:hover {
+	background: transparent;
+	border: 2px dotted #00897b;
+}
+
+/*About*/
+.about {
+	color: black;
+	background: white;
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 125px;
+}
+.title {
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.text {
+	font-size: 15px;
+	margin-bottom: 120px;
+	color: #212121;
+}
+.subtitle {
+	font-family: 'Open Sans Semibold';
+	font-size: 20px;
+	margin-top: 30px;
+	margin-bottom: 20px;
 }
