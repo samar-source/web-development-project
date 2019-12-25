@@ -64,13 +64,13 @@ ul, li {
 .button {
 	padding: 15px 35px;
 	margin: 0 10px;
-	color: white;
 	transition: 0.3s;
 	text-transform: uppercase;
 }
 .button_transparent {
 	background: transparent;
 	border: 2px solid white;
+	color: white;
 }
 .button_transparent:hover {
 	border: 2px dotted white;
@@ -78,6 +78,7 @@ ul, li {
 .button_colored {
 	background: #00897b;
 	border: 2px solid #00897b;
+	color: white;
 }
 .button_colored:hover {
 	background: transparent;
@@ -86,7 +87,7 @@ ul, li {
 
 /*About*/
 .about {
-	color: black;
+	color: #212121;
 	background: white;
 	text-align: center;
 	padding-top: 120px;
@@ -107,4 +108,51 @@ ul, li {
 	font-size: 20px;
 	margin-top: 30px;
 	margin-bottom: 20px;
+}
+.desc {
+	font-size: 15px;
+	color: #212121;
+}
+
+/*Services*/
+.services {
+	color: #212121;
+	background: #e4fdf9;
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 125px;
+}
+.card-services {
+	background: white;
+	padding: 50px 40px 40px;
+	transition: 0.3s;
+	margin-bottom: 30px;
+}
+.card-services:hover {
+	background: #00897b;
+	color: white;
+	-webkit-box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.35);
+	-moz-box-shadow:    4px 4px 10px 0px rgba(50, 50, 50, 0.35);
+	box-shadow:         4px 4px 10px 0px rgba(50, 50, 50, 0.35);
+}
+.card-services:hover .icon,
+.card-services:hover .desc {
+	transition: 0.3s;
+	color: white;
+}
+.card-services:hover .button-services {
+	border: 1px solid white;
+	color: white;
+	transition: 0.3s;
+}
+.icon {
+	font-size: 60px;
+	color: #212121;
+}
+.button-services {
+	border: 1px solid #212121;
+	background: transparent;
+	font-family: 'Open Sans Semibold';
+	margin-top: 24px;
+	color: #212121;
 }
