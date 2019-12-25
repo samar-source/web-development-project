@@ -67,24 +67,16 @@ ul, li {
 	transition: 0.3s;
 	text-transform: uppercase;
 }
-.button_transparent {
-	background: transparent;
-	border: 2px solid white;
-	color: white;
-}
-.button_transparent:hover {
-	border: 2px dotted white;
-}
-.button_colored {
+.header__button {
 	background: #00897b;
-	border: 2px solid #00897b;
+	border: 1px solid #00897b;
 	color: white;
 }
-.button_colored:hover {
+.header__button:hover {
 	background: transparent;
-	border: 2px dotted #00897b;
+	border: 1px solid white;
+	color: white;
 }
-
 /*About*/
 .about {
 	color: #212121;
@@ -149,7 +141,7 @@ ul, li {
 	font-size: 60px;
 	color: #212121;
 }
-.button-services {
+.card-services__button {
 	border: 1px solid #212121;
 	background: transparent;
 	font-family: 'Open Sans Semibold';
