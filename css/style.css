@@ -2,7 +2,7 @@
 
 body {
 	font-family: 'Open Sans';
-	background: gray;
+	background: white;
 }
 ul, li {
 	display: block;
@@ -92,7 +92,7 @@ ul, li {
 }
 .text {
 	font-size: 15px;
-	margin-bottom: 120px;
+	margin-bottom: 95px;
 	color: #212121;
 }
 .subtitle {
@@ -132,7 +132,7 @@ ul, li {
 	transition: 0.3s;
 	color: white;
 }
-.card-services:hover .button-services {
+.card-services:hover .card-services__button {
 	border: 1px solid white;
 	color: white;
 	transition: 0.3s;
@@ -147,4 +147,31 @@ ul, li {
 	font-family: 'Open Sans Semibold';
 	margin-top: 24px;
 	color: #212121;
+}
+
+/*Portfolio*/
+.portfolio {
+	color: #212121;
+	background: white;
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 125px;
+}
+.portfolio__button {
+	background: white; 
+	border: 1px solid #00897b;
+}
+.portfolio__button:hover {
+	background: #00897b;
+	color: white;
+}
+.portfolio__items-list {
+	padding-top: 95px;
+	margin-bottom: 65px;
+}
+.portfolio__item {
+	margin-bottom: 30px;
+}
+.portfolio__item img {
+	width: 100%;
 }
