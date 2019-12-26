@@ -41,6 +41,9 @@ ul, li {
 .fa-search {
 	vertical-align: bottom;
 }
+.fa-search:hover {
+	color: #00897b;
+}
 
 /*Header*/
 .header {
@@ -95,13 +98,13 @@ ul, li {
 	margin-bottom: 95px;
 	color: #212121;
 }
-.subtitle {
+.about-item__title {
 	font-family: 'Open Sans Semibold';
 	font-size: 20px;
 	margin-top: 30px;
 	margin-bottom: 20px;
 }
-.desc {
+.about-item__text {
 	font-size: 15px;
 	color: #212121;
 }
@@ -114,25 +117,25 @@ ul, li {
 	padding-top: 120px;
 	padding-bottom: 125px;
 }
-.card-services {
+.services-card {
 	background: white;
 	padding: 50px 40px 40px;
 	transition: 0.3s;
 	margin-bottom: 30px;
 }
-.card-services:hover {
+.services-card:hover {
 	background: #00897b;
 	color: white;
 	-webkit-box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.35);
 	-moz-box-shadow:    4px 4px 10px 0px rgba(50, 50, 50, 0.35);
 	box-shadow:         4px 4px 10px 0px rgba(50, 50, 50, 0.35);
 }
-.card-services:hover .icon,
-.card-services:hover .desc {
+.services-card:hover .icon,
+.services-card:hover .services-card__text {
 	transition: 0.3s;
 	color: white;
 }
-.card-services:hover .card-services__button {
+.services-card:hover .services-card__button {
 	border: 1px solid white;
 	color: white;
 	transition: 0.3s;
@@ -141,7 +144,17 @@ ul, li {
 	font-size: 60px;
 	color: #212121;
 }
-.card-services__button {
+.services-card__title {
+	font-family: 'Open Sans Semibold';
+	font-size: 20px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.services-card__text {
+	font-size: 15px;
+	color: #212121;
+}
+.services-card__button {
 	border: 1px solid #212121;
 	background: transparent;
 	font-family: 'Open Sans Semibold';
@@ -161,11 +174,12 @@ ul, li {
 	background: white; 
 	border: 1px solid #00897b;
 }
-.portfolio__button:hover {
+.portfolio__button:hover,
+.focused {
 	background: #00897b;
 	color: white;
 }
-.portfolio__items-list {
+.portfolio__list {
 	padding-top: 95px;
 	margin-bottom: 65px;
 }
@@ -174,4 +188,21 @@ ul, li {
 }
 .portfolio__item img {
 	width: 100%;
+}
+div[filter]:hover img {
+	filter: brightness(20%);
+	transition: 0.3s;
+}
+.portfolio-item__text {
+	display: none;
+}
+div[filter]:hover .portfolio-item__text{
+	display: block;
+	width: 100%;
+	color: white;
+	position: absolute;
+	top: 130px;
+	left: 0;
+	z-index: 3;
+	text-align: center;
 }
