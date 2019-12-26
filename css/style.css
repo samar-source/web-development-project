@@ -9,6 +9,22 @@ ul, li {
 	margin: 0;
 	padding: 0;
 }
+.section {
+	color: #212121;
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 125px;
+}
+.title {
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.text {
+	font-size: 15px;
+	margin-bottom: 95px;
+	color: #212121;
+}
 
 /*Menu-bar*/
 .menu-bar {
@@ -80,13 +96,10 @@ ul, li {
 	border: 1px solid white;
 	color: white;
 }
+
 /*About*/
 .about {
-	color: #212121;
 	background: white;
-	text-align: center;
-	padding-top: 120px;
-	padding-bottom: 125px;
 }
 .title {
 	font-size: 30px;
@@ -111,11 +124,7 @@ ul, li {
 
 /*Services*/
 .services {
-	color: #212121;
 	background: #e4fdf9;
-	text-align: center;
-	padding-top: 120px;
-	padding-bottom: 125px;
 }
 .services-card {
 	background: white;
@@ -126,9 +135,9 @@ ul, li {
 .services-card:hover {
 	background: #00897b;
 	color: white;
-	-webkit-box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.35);
-	-moz-box-shadow:    4px 4px 10px 0px rgba(50, 50, 50, 0.35);
-	box-shadow:         4px 4px 10px 0px rgba(50, 50, 50, 0.35);
+	-webkit-box-shadow: 0px 5px 18px 0px rgba(50, 50, 50, 0.35);
+	-moz-box-shadow:    0px 5px 18px 0px rgba(50, 50, 50, 0.35);
+	box-shadow:         0px 5px 18px 0px rgba(50, 50, 50, 0.35);
 }
 .services-card:hover .icon,
 .services-card:hover .services-card__text {
@@ -164,11 +173,7 @@ ul, li {
 
 /*Portfolio*/
 .portfolio {
-	color: #212121;
 	background: white;
-	text-align: center;
-	padding-top: 120px;
-	padding-bottom: 125px;
 }
 .portfolio__button {
 	background: white; 
@@ -205,4 +210,56 @@ div[filter]:hover .portfolio-item__text{
 	left: 0;
 	z-index: 3;
 	text-align: center;
+}
+
+/*Pricing*/
+.pricing {
+	background: #f0f1f1;
+}
+.pricing-card {
+	background: white;
+	transition: 0.3s;
+}
+.pricing-card:hover {
+	-webkit-box-shadow: 0px 5px 18px 0px rgba(50, 50, 50, 0.35);
+	-moz-box-shadow:    0px 5px 18px 0px rgba(50, 50, 50, 0.35);
+	box-shadow:         0px 5px 18px 0px rgba(50, 50, 50, 0.35);
+}
+.pricing-card__title {
+	background-image: url(../img/rectangle.png);
+	padding-top: 10px;
+	padding-bottom: 65px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	max-height: 211px;
+	color: white;
+	font-size: 50px;
+}
+.pricing-card__title span,
+.pricing-card__title sup {
+	font-size: 25px;
+}
+.pricing-card__title sub {
+	font-size: 17px;
+}
+.pricing-card__list {
+	font-size: 17px;
+}
+.pricing-card__item {
+	width: 175px;
+	margin: 0 auto;
+	padding-top: 37px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #bfbfbf;
+}
+.pricing-card__button {
+	margin: 63px auto;
+	color: black;
+	border: 1px solid black;
+	background: white;
+}
+.pricing-card__button:hover {
+	color: white;
+	border: 1px solid #00897b;
+	background: #00897b;
 }
