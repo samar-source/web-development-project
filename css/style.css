@@ -253,13 +253,52 @@ div[filter]:hover .portfolio-item__text{
 	border-bottom: 1px solid #bfbfbf;
 }
 .pricing-card__button {
+	text-transform: none;
+	padding: auto;
+	width: 180px;
+	height: 60px;
 	margin: 63px auto;
 	color: black;
 	border: 1px solid black;
 	background: white;
 }
 .pricing-card__button:hover {
+	text-transform: uppercase;
 	color: white;
 	border: 1px solid #00897b;
 	background: #00897b;
+}
+
+/*Team*/
+.team-member {
+
+}
+.team-member img {
+
+}
+.team-member h5 {
+	font-family: 'Open Sans Semibold';
+	margin-top: 30px;
+}
+.team-member p {
+	font-size: 15px;
+	margin-bottom: 30px;
+}
+.team-member__icons li{
+	display: inline-block;
+}
+.team-member__icons a i {
+	transition: 0.3s;
+}
+.team-member__icons i:nth-child(1) {
+	color: #f0f1f1;
+}
+.team-member__icons i:nth-child(2) {
+	color: #00897b;
+}
+.team-member__icons a:hover i:nth-child(1) {
+	color: #3949ab;
+}
+.team-member__icons a:hover i:nth-child(2) {
+	color: white;
 }
