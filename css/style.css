@@ -49,6 +49,7 @@ ul, li {
 	font-family: 'Open Sans Semibold';
 	font-size: 20px;
 	color: #212121;
+	transition: 0.3s;
 }
 .menu__item a:hover {
 	text-decoration: none;
@@ -176,17 +177,19 @@ ul, li {
 	background: white;
 }
 .portfolio__button {
-	background: white; 
+	background: #00897b;
 	border: 1px solid #00897b;
+	color: white;
+	margin-top: 95px;
 }
 .portfolio__button:hover,
 .focused {
-	background: #00897b;
-	color: white;
+	background: transparent; 
+	border: 1px solid #00897b;
+	color: #00897b;
 }
 .portfolio__list {
 	padding-top: 95px;
-	margin-bottom: 65px;
 }
 .portfolio__item {
 	margin-bottom: 30px;
@@ -270,6 +273,9 @@ div[filter]:hover .portfolio-item__text{
 }
 
 /*Team*/
+.multiple-items {
+	display: grid;
+}
 .team-member {
 	max-width: 350px;
 	width: 100%;
@@ -286,7 +292,13 @@ div[filter]:hover .portfolio-item__text{
 	margin-bottom: 30px;
 }
 .team-member__icons li{
-	display: inline;
+	display: inline-flex;
+}
+.team-member__icons li a:focus {
+	outline: none;
+}
+.team-member__icons span {
+	width: 70px;
 }
 .team-member__icons a i {
 	transition: 0.3s;
@@ -321,6 +333,138 @@ div[filter]:hover .portfolio-item__text{
 	width: 15px;
 	margin: 5px;
 }
+.dots-style button:focus {
+	outline: none;
+}
 .dots-style li[class="slick-active"] button {
 	background: #3949ab;
+}
+
+/*Blog*/
+.blog {
+	background: #e4fdf9;
+}
+.blog__item {
+	text-align: left;
+}
+.left > div:first-child {
+	order: 1;
+}
+.left > div:last-child {
+	order: 2;
+}
+.right > div:first-child {
+	order: 2;
+}
+.right > div:last-child {
+	order: 1;
+}
+.blog__item img {
+	width: 100%;
+}
+.blog__item a {
+	font-family: 'Open Sans Semibold';
+	font-size: 25px;
+	display: block;
+	margin-top: 60px;
+	margin-bottom: 15px;
+	color: #212121;
+	transition: 0.3s;
+}
+.blog__item a:hover {
+	text-decoration: none;
+	color: #00897b;
+}
+.blog__item span {
+	font-family: 'Open Sans Semibold';
+	margin-right: 35px;
+}
+.blog__item p {
+	margin-top: 15px;
+	margin-bottom: 60px;
+}
+.blog__item .far {
+	margin-right: 10px;
+}
+.blog__button {
+	background: #00897b;
+	border: 1px solid #00897b;
+	color: white;
+	margin-top: 125px;
+}
+.blog__button:hover,
+.focused {
+	background: transparent; 
+	border: 1px solid #00897b;
+	color: #00897b;
+}
+
+/*Contact*/
+.footer {
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 100px;
+	color: white;
+	background-image: url(../img/contact.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.footer p {
+	color: white;
+}
+.circle {
+	background: #3949ab;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	margin: 0 auto 40px;
+}
+.fa-map-marker-alt,
+.fa-phone-alt,
+.fa-envelope {
+	font-size: 50px;
+	
+}
+.footer a {
+	font-family: 'Open Sans Semibold';
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+}
+.form {
+	margin-top: 70px;
+}
+.form-group {
+	/*width: 100%;*/
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.form-control {
+	padding: 30px;
+	border-radius: 7px;
+	resize: none;
+}
+.form__button {
+	padding: 15px 83px;
+	margin: 0;
+	transition: 0.3s;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 7px;
+	background-color: white;
+}
+.form__button:hover {
+	background-color: #d4d4d4;
+}
+.form__button:focus {
+	outline: none;
+}
+.rules {
+	padding: 20px 0;
+	text-align: center;
+	font-family: 'Open Sans Semibold';
 }
