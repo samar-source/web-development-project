@@ -271,10 +271,11 @@ div[filter]:hover .portfolio-item__text{
 
 /*Team*/
 .team-member {
-
+	max-width: 350px;
+	width: 100%;
 }
 .team-member img {
-
+	width: 100%;
 }
 .team-member h5 {
 	font-family: 'Open Sans Semibold';
@@ -285,7 +286,7 @@ div[filter]:hover .portfolio-item__text{
 	margin-bottom: 30px;
 }
 .team-member__icons li{
-	display: inline-block;
+	display: inline;
 }
 .team-member__icons a i {
 	transition: 0.3s;
@@ -301,4 +302,25 @@ div[filter]:hover .portfolio-item__text{
 }
 .team-member__icons a:hover i:nth-child(2) {
 	color: white;
+}
+.dots-style {
+	margin-top: 115px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+.dots-style button {
+	background: #00897b;
+	border: none;
+	border-radius: 50%;
+	font-size: 0;
+	height: 15px;
+	width: 15px;
+	margin: 5px;
+}
+.dots-style li[class="slick-active"] button {
+	background: #3949ab;
 }
