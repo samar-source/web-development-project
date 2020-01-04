@@ -14,8 +14,11 @@ $(document).ready(function() {
 
 	// Slick slider for section Team
 	$('.multiple-items').slick({
-	  infinite: true,
-	  slidesToShow: 3,
-	  slidesToScroll: 3
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		arrows: false,
+		dots: true,
+		dotsClass: 'dots-style'
 	});
 });
