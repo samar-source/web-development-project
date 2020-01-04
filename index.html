@@ -23,11 +23,11 @@
 					<nav>
 						<ul class="menu d-flex justify-content-end">
 							<li class="menu__item"><a href="">Home</a></li>
-							<li class="menu__item"><a href="">About</a></li>
-							<li class="menu__item"><a href="">Servicing</a></li>
-							<li class="menu__item"><a href="">Portfolio</a></li>
-							<li class="menu__item"><a href="">Blog</a></li>
-							<li class="menu__item"><a href="">Contact us</a></li>
+							<li class="menu__item"><a href="#about">About</a></li>
+							<li class="menu__item"><a href="#services">Servicing</a></li>
+							<li class="menu__item"><a href="#portfolio">Portfolio</a></li>
+							<li class="menu__item"><a href="#blog">Blog</a></li>
+							<li class="menu__item"><a href="#footer">Contact us</a></li>
 							<li class="menu__item"><i class="fas fa-search"></i></li>
 						</ul>
 					</nav>
@@ -51,7 +51,7 @@
 	</header>
 
 <!-- About -->
-	<section class="about section">
+	<section class="about section" id="about">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-xl-8">
@@ -80,7 +80,7 @@
 	</section>
 
 <!-- Services -->
-	<section class="services section">
+	<section class="services section" id="services">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-xl-8">
@@ -142,7 +142,7 @@
 	</section>
 
 <!-- Portfolio -->
-	<section class="portfolio section">
+	<section class="portfolio section" id="portfolio">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-xl-8">
@@ -265,7 +265,7 @@
 					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
 				</div>
 			</div>
-			<div class="multiple-items">
+			<div class="row multiple-items justify-content-center">
 				<div class="team__member team-member">
 					<img src="img/team1.png" alt="John Doe">
 					<h5>John Doe</h5>
@@ -620,7 +620,114 @@
 			</div>
 		</div>
 	</section>
-	
+
+<!-- Blog -->
+	<section class="blog section" id="blog">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-8">
+					<h2 class="title">Blog</h2>
+					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+				</div>
+			</div>
+			<div class="row blog__item left">
+				<div class="col-xl-6">
+					<img src="img/blog1.png" alt="Blog image">
+				</div>
+				<div class="col-xl-6">
+					<a href="#">SEO Quis Vestibulum</a>
+					<div>
+						<span><i class="far fa-calendar-alt"></i>14.0702017</span>
+						<span><i class="far fa-file"></i>Development</span>
+					</div>
+					<p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+				</div>
+			</div>
+			<div class="row blog__item right">
+				<div class="col-xl-6">
+					<img src="img/blog2.png" alt="Blog image">
+				</div>
+				<div class="col-xl-6">
+					<a href="#">SEO Quis Vestibulum</a>
+					<div>
+						<span><i class="far fa-calendar-alt"></i>14.0702017</span>
+						<span><i class="far fa-file"></i>Development</span>
+					</div>
+					<p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+				</div>
+			</div>
+			<div class="row blog__item left">
+				<div class="col-xl-6">
+					<img src="img/blog3.png" alt="Blog image">
+				</div>
+				<div class="col-xl-6">
+					<a href="#">SEO Quis Vestibulum</a>
+					<div>
+						<span><i class="far fa-calendar-alt"></i>14.0702017</span>
+						<span><i class="far fa-file"></i>Development</span>
+					</div>
+					<p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+				</div>
+			</div>
+			<button filter="all" class="button blog__button">More view</button>
+		</div>
+	</section>
+
+<!-- Footer -->
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-8">
+					<h2 class="title">Contact Us</h2>
+					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+				</div>
+			</div>
+			<div class="row justify-content-around">
+				<div class="col-xl-3">
+					<div class="circle">
+						<i class="fas fa-map-marker-alt"></i>
+					</div>
+					<a href="">Nobinagar savar,Dhaka Bangladesh</a>
+				</div>
+				<div class="col-xl-3">
+					<div class="circle">
+						<i class="fas fa-phone-alt"></i>
+					</div>
+					<a href="tel:+8801743331996">+8801743331996</a>
+					<a href="tel:+8801928737807">+8801928737807</a>
+				</div>
+				<div class="col-xl-3">
+					<div class="circle">
+						<i class="fas fa-envelope"></i>
+					</div>
+					<a href="mailto:quickmasud@gmail.com">quickmasud@gmail.com</a>
+					<a href="mailto:quickmasud@yahoo.com">quickmasud@yahoo.com</a>
+				</div>
+			</div>
+			<form action="" class="form">
+				<div class="row justify-content-center">
+					<div class="form-group col-xl-5">
+						<input type="text" class="form-control" placeholder="Your Name">
+					</div>
+					<div class="form-group col-xl-5">
+						<input type="email" class="form-control" placeholder="Your Email">
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="form-group col-xl-10">
+						<textarea name="" class="form-control" id="" cols="30" rows="10" placeholder="Write Massage"></textarea>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="form-group col-xl-2 offset-xl-7">
+						<button type="submit" class="form__button">Send</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</footer>
+	<footer class="rules">All rights Reserved &#169; 2017</footer>
+
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
