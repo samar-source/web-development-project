@@ -10,19 +10,33 @@
 	<link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 	<title>Bootstrap4+BEM</title>
+
+
+<!-- УДАЛИТЬ    для планина live reload -->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?LR-verbose&snipver=1&LiveTest=1"></' + 'script>')</script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35730/livereload.js?LR-verbose&snipver=1&LiveTest=1"></' + 'script>')</script>
+<!-- УДАЛИТЬ    для плпгина live reload -->
+
+
+
 </head>
 <body>
+
+<!-- To top -->
+	<div id="to-top"><i class="fas fa-chevron-up"></i></div>
+
 <!-- Menu-bar -->
-	<header class="menu-bar">
+	<header class="menu-bar" id="menu-bar">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-2">
+				<div class="col-xl-2 logo-bar">
 					<a href="#" class="logo">WebDevProject</a>
+					<button class="menu-burger"><i class="fas fa-bars"></i></button>
 				</div>
 				<div class="col-xl-8 ml-auto align-self-center">
 					<nav>
 						<ul class="menu d-flex justify-content-end">
-							<li class="menu__item"><a href="">Home</a></li>
+							<li class="menu__item"><a href="#menu-bar"><i class="fas fa-home"></i></a></li>
 							<li class="menu__item"><a href="#about">About</a></li>
 							<li class="menu__item"><a href="#services">Servicing</a></li>
 							<li class="menu__item"><a href="#portfolio">Portfolio</a></li>
@@ -60,17 +74,17 @@
 				</div>
 			</div>
 			<div class="row justify-content-around">
-				<div class="col-xl-3 about-item">
+				<div class="col-xl-3 col-md-6 about-item">
 					<img src="img/internet.png" alt="">
 					<h3 class="about-item__title">Awesome Icons</h3>
 					<p class="about-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dolore, molestias a.</p>
 				</div>
-				<div class="col-xl-3">
+				<div class="col-xl-3 col-md-6 about-item">
 					<img src="img/transfer.png" alt="">
 					<h3 class="about-item__title">One Page</h3>
 					<p class="about-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit optio, quis ipsa?</p>
 				</div>
-				<div class="col-xl-3">
+				<div class="col-xl-3 col-md-6 about-item">
 					<img src="img/head.png" alt="">
 					<h3 class="about-item__title">Fully Responsive</h3>
 					<p class="about-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus rerum doloribus nam.</p>
@@ -89,7 +103,7 @@
 				</div>
 			</div>
 			<div class="row justify-content-center">
-				<div class="col-xl-4">
+				<div class="col-xl-4 col-md-6">
 					<div class="services__card services-card">
 						<i class="fas fa-search icon"></i>
 						<h3 class="services-card__title">Research</h3>
@@ -97,7 +111,7 @@
 						<button class="button services-card__button">Read more</button>
 					</div>
 				</div>
-				<div class="col-xl-4">
+				<div class="col-xl-4 col-md-6">
 					<div class="services__card services-card">
 						<i class="far fa-images icon"></i>
 						<h3 class="services-card__title">Portfolio</h3>
@@ -105,7 +119,7 @@
 						<button class="button services-card__button">Read more</button>
 					</div>
 				</div>
-				<div class="col-xl-4">
+				<div class="col-xl-4 col-md-6">
 					<div class="services__card services-card">
 						<i class="far fa-question-circle icon"></i>
 						<h3 class="services-card__title">Support</h3>
@@ -113,7 +127,7 @@
 						<button class="button services-card__button">Read more</button>
 					</div>
 				</div>
-				<div class="col-xl-4">
+				<div class="col-xl-4 col-md-6">
 					<div class="services__card services-card">
 						<i class="far fa-file-alt icon"></i>
 						<h3 class="services-card__title">Documentation</h3>
@@ -121,7 +135,7 @@
 						<button class="button services-card__button">Read more</button>
 					</div>
 				</div>
-				<div class="col-xl-4">
+				<div class="col-xl-4 col-md-6">
 					<div class="services__card services-card">
 						<i class="far fa-file-code icon"></i>
 						<h3 class="services-card__title">Development</h3>
@@ -129,7 +143,7 @@
 						<button class="button services-card__button">Read more</button>
 					</div>
 				</div>
-				<div class="col-xl-4">
+				<div class="col-xl-4 col-md-6">
 					<div class="services__card services-card">
 						<i class="far fa-object-group icon"></i>
 						<h3 class="services-card__title">Design</h3>
@@ -150,7 +164,7 @@
 					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
 				</div>
 			</div>
-			<div class="row justify-content-around">
+			<div class="row portfolio-menu justify-content-around">
 				<div class="col-xl-8">
 					<button filter="all" class="button portfolio__button">All</button>
 					<button filter="web" class="button portfolio__button">Web design</button>
@@ -159,42 +173,42 @@
 				</div>
 			</div>
 			<div class="row filter justify-content-center portfolio__list">
-				<div filter="web" class="col-xl-4 portfolio__item portfolio-item">
+				<div filter="web" class="col-xl-4 col-md-6 portfolio__item portfolio-item">
 					<img src="img/item1.png" alt="Portfolio photo 1">
 					<div class="portfolio-item__text">
 						<h5>Hand Watch</h5>
 						<p>Web design</p>
 					</div>
 				</div>
-				<div filter="web" class="col-xl-4 portfolio__item portfolio-item">
+				<div filter="web" class="col-xl-4 col-md-6 portfolio__item portfolio-item">
 					<img src="img/item2.png" alt="Portfolio photo 2">
 					<div class="portfolio-item__text">
 						<h5>One Day Pass</h5>
 						<p>Web design</p>
 					</div>
 				</div>
-				<div filter="ui-ux" class="col-xl-4 portfolio__item portfolio-item">
+				<div filter="ui-ux" class="col-xl-4 col-md-6 portfolio__item portfolio-item">
 					<img src="img/item3.png" alt="Portfolio photo 3">
 					<div class="portfolio-item__text">
 						<h5>Modal T-shirt</h5>
 						<p>UX/UI design</p>
 					</div>
 				</div>
-				<div filter="mockups" class="col-xl-4 portfolio__item portfolio-item">
+				<div filter="mockups" class="col-xl-4 col-md-6 portfolio__item portfolio-item">
 					<img src="img/item4.png" alt="Portfolio photo 4">
 					<div class="portfolio-item__text">
 						<h5>Flask</h5>
 						<p>Mockups</p>
 					</div>
 				</div>
-				<div filter="web" class="col-xl-4 portfolio__item portfolio-item">
+				<div filter="web" class="col-xl-4 col-md-6 portfolio__item portfolio-item">
 					<img src="img/item5.png" alt="Portfolio photo 5">
 					<div class="portfolio-item__text">
 						<h5>Bottle</h5>
 						<p>Web design</p>
 					</div>
 				</div>
-				<div filter="mockups" class="col-xl-4 portfolio__item portfolio-item">
+				<div filter="mockups" class="col-xl-4 col-md-6 portfolio__item portfolio-item">
 					<img src="img/item6.png" alt="Portfolio photo 6">
 					<div class="portfolio-item__text">
 						<h5>Case</h5>
@@ -216,7 +230,7 @@
 				</div>
 			</div>
 			<div class="row justify-content-center">
-				<div class="col-xl-4">
+				<div class="col-xl-4 col-md-6">
 					<div class="pricing-card">
 						<div class="pricing-card__title"><span>Free Trail</span><br> <sup>$</sup> 00 <sub>per month</sub></div>
 						<ul class="pricing-card__list">
@@ -228,7 +242,7 @@
 						<button class="button pricing-card__button">Order Now</button>
 					</div>
 				</div>
-				<div class="col-xl-4">
+				<div class="col-xl-4 col-md-6">
 					<div class="pricing-card">
 						<div class="pricing-card__title"><span>Basic</span><br> <sup>$</sup> 50 <sub>per month</sub></div>
 						<ul class="pricing-card__list">
@@ -240,7 +254,7 @@
 						<button class="button pricing-card__button">Order Now</button>
 					</div>
 				</div>
-				<div class="col-xl-4">
+				<div class="col-xl-4 col-md-6">
 					<div class="pricing-card">
 						<div class="pricing-card__title"><span>Ultimates</span><br> <sup>$</sup> 00 <sub>per month</sub></div>
 						<ul class="pricing-card__list">
@@ -631,10 +645,10 @@
 				</div>
 			</div>
 			<div class="row blog__item left">
-				<div class="col-xl-6">
+				<div class="col-xl-6 col-md-6">
 					<img src="img/blog1.png" alt="Blog image">
 				</div>
-				<div class="col-xl-6">
+				<div class="col-xl-6 col-md-6">
 					<a href="#">SEO Quis Vestibulum</a>
 					<div>
 						<span><i class="far fa-calendar-alt"></i>14.0702017</span>
@@ -644,10 +658,10 @@
 				</div>
 			</div>
 			<div class="row blog__item right">
-				<div class="col-xl-6">
+				<div class="col-xl-6 col-md-6">
 					<img src="img/blog2.png" alt="Blog image">
 				</div>
-				<div class="col-xl-6">
+				<div class="col-xl-6 col-md-6">
 					<a href="#">SEO Quis Vestibulum</a>
 					<div>
 						<span><i class="far fa-calendar-alt"></i>14.0702017</span>
@@ -657,10 +671,10 @@
 				</div>
 			</div>
 			<div class="row blog__item left">
-				<div class="col-xl-6">
+				<div class="col-xl-6 col-md-6">
 					<img src="img/blog3.png" alt="Blog image">
 				</div>
-				<div class="col-xl-6">
+				<div class="col-xl-6 col-md-6">
 					<a href="#">SEO Quis Vestibulum</a>
 					<div>
 						<span><i class="far fa-calendar-alt"></i>14.0702017</span>
@@ -682,21 +696,21 @@
 					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
 				</div>
 			</div>
-			<div class="row justify-content-around">
-				<div class="col-xl-3">
+			<div class="row contact-list justify-content-around">
+				<div class="contact__item col-xl-3">
 					<div class="circle">
 						<i class="fas fa-map-marker-alt"></i>
 					</div>
 					<a href="">Nobinagar savar,Dhaka Bangladesh</a>
 				</div>
-				<div class="col-xl-3">
+				<div class="contact__item col-xl-3">
 					<div class="circle">
 						<i class="fas fa-phone-alt"></i>
 					</div>
 					<a href="tel:+8801743331996">+8801743331996</a>
 					<a href="tel:+8801928737807">+8801928737807</a>
 				</div>
-				<div class="col-xl-3">
+				<div class="contact__item col-xl-3">
 					<div class="circle">
 						<i class="fas fa-envelope"></i>
 					</div>
@@ -728,7 +742,8 @@
 	</footer>
 	<footer class="rules">All rights Reserved &#169; 2017</footer>
 
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="lib/slick/slick.js"></script>
