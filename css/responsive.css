@@ -1,0 +1,40 @@
+@media screen and (max-width: 1024px) {
+	nav {
+		display: none;
+	}
+	.logo-bar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.menu-burger {
+		display: block !important;
+		background: transparent;
+		border: none;
+		font-size: 50px;
+		color: #00897b;
+		width: 50px;
+		height: 50px;
+		cursor: pointer;
+		position: relative;
+	}
+	.menu-burger i {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+	.pricing-card {
+		margin-bottom: 30px;
+	}
+	.blog__item a {
+		margin-top: 10px !important;
+	}
+	.contact__item {
+		margin-bottom: 80px;
+	}
+	.contact__item:last-child {
+		margin-bottom: 0;
+}
+}
