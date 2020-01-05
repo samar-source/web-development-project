@@ -1,4 +1,6 @@
 @import'fonts.css';
+@import'responsive.css';
+
 
 body {
 	font-family: 'Open Sans';
@@ -26,6 +28,30 @@ ul, li {
 	color: #212121;
 }
 
+/*To top*/
+#to-top {
+	z-index: 999;
+	width: 60px;
+	height: 50px;
+	border: none;
+	font-size: 50px;
+	background: transparent;
+	text-align: center;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	cursor: pointer;
+	display: none;
+	color: #00897b;
+}
+#to-top i {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
 /*Menu-bar*/
 .menu-bar {
 	background: white;
@@ -41,6 +67,9 @@ ul, li {
 	text-decoration: none;
 	color: #00897b;
 }
+.menu-burger {
+	display: none;
+}
 .menu__item {
 	margin-left: 37px;
 	cursor: pointer;ЗP
@@ -53,13 +82,13 @@ ul, li {
 }
 .menu__item a:hover {
 	text-decoration: none;
-	color: #00897b;
+	color: #00897b !important;
 }
 .fa-search {
 	vertical-align: bottom;
 }
 .fa-search:hover {
-	color: #00897b;
+	color: #00897b !important;
 }
 
 /*Header*/
@@ -175,6 +204,9 @@ ul, li {
 /*Portfolio*/
 .portfolio {
 	background: white;
+}
+.portfolio-menu .portfolio__button {
+	margin-top: 0 !important;
 }
 .portfolio__button {
 	background: #00897b;
@@ -434,6 +466,7 @@ div[filter]:hover .portfolio-item__text{
 	font-size: 20px;
 	color: white;
 	text-decoration: none;
+	display: block;
 }
 .form {
 	margin-top: 70px;
