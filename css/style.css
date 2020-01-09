@@ -1,5 +1,5 @@
-@import'fonts.css';
-@import'responsive.css';
+@import'fonts.css';/*
+@import'responsive.css';*/
 
 
 body {
@@ -72,7 +72,7 @@ ul, li {
 }
 .menu__item {
 	margin-left: 37px;
-	cursor: pointer;ЗP
+	cursor: pointer;
 }
 .menu__item a {
 	font-family: 'Open Sans Semibold';
@@ -135,11 +135,6 @@ ul, li {
 	font-size: 30px;
 	font-weight: bold;
 	margin-bottom: 20px;
-}
-.text {
-	font-size: 15px;
-	margin-bottom: 95px;
-	color: #212121;
 }
 .about-item__title {
 	font-family: 'Open Sans Semibold';
