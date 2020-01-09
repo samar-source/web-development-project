@@ -1,4 +1,19 @@
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
+	.pricing-card {
+		margin-bottom: 30px;
+	}
+	.blog__item a {
+		margin-top: 10px;
+	}
+	.contact__item {
+		margin-bottom: 80px;
+	}
+	.contact__item:last-child {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 992px) {
 	nav {
 		display: none;
 	}
@@ -8,13 +23,13 @@
 		align-items: center;
 	}
 	.menu-burger {
-		display: block !important;
+		display: block;
 		background: transparent;
 		border: none;
-		font-size: 50px;
+		font-size: 40px;
 		color: #00897b;
-		width: 50px;
-		height: 50px;
+		width: 40px;
+		height: 40px;
 		cursor: pointer;
 		position: relative;
 	}
@@ -25,16 +40,83 @@
 		right: 0;
 		margin: 0 auto;
 	}
-	.pricing-card {
-		margin-bottom: 30px;
+	.menu__item {
+		margin-top: 15px;
+		margin-bottom: 15px;
 	}
-	.blog__item a {
-		margin-top: 10px !important;
-	}
-	.contact__item {
-		margin-bottom: 80px;
-	}
-	.contact__item:last-child {
-		margin-bottom: 0;
 }
+
+@media screen and (max-width: 768px) {
+	.header > div {
+		padding: 80px 0;
+	}
+	.header__title {
+		font-size: 45px;
+	}
+	.header__text {
+		margin-bottom: 50px;
+	}
+	.header__button {
+		margin-bottom: 20px;
+	}
+	.section {
+		padding: 60px 0;
+	}
+	.text {
+		margin-bottom: 45px;
+	}
+	.portfolio-menu .portfolio__button {
+		display: block;
+		text-align: center;
+		margin: 20px auto;
+	}
+	.portfolio__list {
+		padding-top: 40px;
+	}
+	.portfolio__item img {
+		width: 80%;
+	}
+	.portfolio__button {
+		margin-top: 30px;
+	}
+	.dots-style {
+		margin-top: 30px;
+	}
+	.team-member img {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.right > div:first-child {
+		order: 1;
+	}
+	.right > div:last-child {
+		order: 2;
+	}
+	.blog__button {
+		margin-top: 20px;
+	}
+	.footer {
+		padding-top: 80px;
+		padding-bottom: 60px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.row {
+		margin: 0;
+	}
+	.logo {
+		font-size: 24px;
+	}
+	.menu-burger {
+		font-size: 30px;
+		width: 30px;
+		height: 30px;
+	}
+	.portfolio__item img {
+		width: 100%;
+	}
+	.blog__item span {
+		display: block;
+	}
 }
