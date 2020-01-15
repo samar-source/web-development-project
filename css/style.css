@@ -1,6 +1,4 @@
-@import'fonts.css';/*
-@import'responsive.css';*/
-
+@import'fonts.css';
 
 body {
 	font-family: 'Open Sans';
@@ -78,6 +76,7 @@ ul, li {
 	font-family: 'Open Sans Semibold';
 	font-size: 20px;
 	color: #212121;
+	-webkit-transition: 0.3s;
 	transition: 0.3s;
 }
 .menu__item a:hover {
@@ -113,6 +112,7 @@ ul, li {
 .button {
 	padding: 15px 35px;
 	margin: 0 10px;
+	-webkit-transition: 0.3s;
 	transition: 0.3s;
 	text-transform: uppercase;
 }
@@ -154,24 +154,25 @@ ul, li {
 .services-card {
 	background: white;
 	padding: 50px 40px 40px;
+	-webkit-transition: 0.3s;
 	transition: 0.3s;
 	margin-bottom: 30px;
 }
 .services-card:hover {
 	background: #00897b;
 	color: white;
-	-webkit-box-shadow: 0px 5px 18px 0px rgba(50, 50, 50, 0.35);
-	-moz-box-shadow:    0px 5px 18px 0px rgba(50, 50, 50, 0.35);
 	box-shadow:         0px 5px 18px 0px rgba(50, 50, 50, 0.35);
 }
 .services-card:hover .icon,
 .services-card:hover .services-card__text {
+	-webkit-transition: 0.3s;
 	transition: 0.3s;
 	color: white;
 }
 .services-card:hover .services-card__button {
 	border: 1px solid white;
 	color: white;
+	-webkit-transition: 0.3s;
 	transition: 0.3s;
 }
 .icon {
@@ -225,7 +226,9 @@ ul, li {
 	width: 100%;
 }
 div[filter]:hover img {
-	filter: brightness(20%);
+	-webkit-filter: brightness(20%);
+	        filter: brightness(20%);
+	-webkit-transition: 0.3s;
 	transition: 0.3s;
 }
 .portfolio-item__text {
@@ -248,11 +251,10 @@ div[filter]:hover .portfolio-item__text{
 }
 .pricing-card {
 	background: white;
+	-webkit-transition: 0.3s;
 	transition: 0.3s;
 }
 .pricing-card:hover {
-	-webkit-box-shadow: 0px 5px 18px 0px rgba(50, 50, 50, 0.35);
-	-moz-box-shadow:    0px 5px 18px 0px rgba(50, 50, 50, 0.35);
 	box-shadow:         0px 5px 18px 0px rgba(50, 50, 50, 0.35);
 }
 .pricing-card__title {
@@ -301,6 +303,7 @@ div[filter]:hover .portfolio-item__text{
 
 /*Team*/
 .multiple-items {
+	display: -ms-grid;
 	display: grid;
 }
 .team-member {
@@ -319,6 +322,8 @@ div[filter]:hover .portfolio-item__text{
 	margin-bottom: 30px;
 }
 .team-member__icons li{
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
 	display: inline-flex;
 }
 .team-member__icons li a:focus {
@@ -328,6 +333,7 @@ div[filter]:hover .portfolio-item__text{
 	width: 70px;
 }
 .team-member__icons a i {
+	-webkit-transition: 0.3s;
 	transition: 0.3s;
 }
 .team-member__icons i:nth-child(1) {
@@ -344,12 +350,15 @@ div[filter]:hover .portfolio-item__text{
 }
 .dots-style {
 	margin-top: 115px;
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .dots-style button {
 	background: #00897b;
@@ -375,16 +384,24 @@ div[filter]:hover .portfolio-item__text{
 	text-align: left;
 }
 .left > div:first-child {
-	order: 1;
+	-webkit-box-ordinal-group: 2;
+	    -ms-flex-order: 1;
+	        order: 1;
 }
 .left > div:last-child {
-	order: 2;
+	-webkit-box-ordinal-group: 3;
+	    -ms-flex-order: 2;
+	        order: 2;
 }
 .right > div:first-child {
-	order: 2;
+	-webkit-box-ordinal-group: 3;
+	    -ms-flex-order: 2;
+	        order: 2;
 }
 .right > div:last-child {
-	order: 1;
+	-webkit-box-ordinal-group: 2;
+	    -ms-flex-order: 1;
+	        order: 1;
 }
 .blog__item img {
 	width: 100%;
@@ -396,6 +413,7 @@ div[filter]:hover .portfolio-item__text{
 	margin-top: 60px;
 	margin-bottom: 15px;
 	color: #212121;
+	-webkit-transition: 0.3s;
 	transition: 0.3s;
 }
 .blog__item a:hover {
@@ -444,10 +462,16 @@ div[filter]:hover .portfolio-item__text{
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	-ms-align-items: center;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin: 0 auto 40px;
 }
 .fa-map-marker-alt,
@@ -479,6 +503,7 @@ div[filter]:hover .portfolio-item__text{
 .form__button {
 	padding: 15px 83px;
 	margin: 0;
+	-webkit-transition: 0.3s;
 	transition: 0.3s;
 	text-transform: uppercase;
 	border: none;
