@@ -26,6 +26,31 @@ ul, li {
 	color: #212121;
 }
 
+/*GitHub*/
+.github {
+	position: fixed;
+	right: 0;
+	top: 100px;
+	z-index: 10000;
+}
+.github-link {
+	display: block;
+	padding: 7px 10px 5px 10px;
+	background-color: #000;
+	border-radius: 10px 0 0 10px;
+	text-align: right;
+	cursor: pointer;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.fa-github {
+	font-size: 2.5rem;
+	color: #fff;
+}
+.github-link:hover {
+	padding-right: 40px;
+}
+
 /*To top*/
 #to-top {
 	z-index: 999;
